@@ -42,6 +42,7 @@ body {
     max-width: 800px;
     width: 80%;
     height: auto; /* Allow auto height for better content fit */
+    margin: auto;  /* Center the container on the screen */
 }
 
 /* Add margin to ensure better centering */
@@ -120,13 +121,14 @@ a:hover {
 /* Media query for screens up to 768px wide (tablets and larger mobile phones) */
 @media (max-width: 768px) {
     html, body {
-        height: auto;
+        height: 100%; /* Ensure full height */
     }
 
     .container {
         width: 90%;  /* Slight increase for smaller screens */
         padding: 40px;
-        margin: 20px 0;
+        margin: auto; /* Center the container */
+        height: auto;
     }
 
     h1 {
@@ -145,14 +147,20 @@ a:hover {
 /* Media query for screens up to 480px wide (small smartphones) */
 @media (max-width: 480px) {
     html, body {
-        height: auto;
+        height: 100%; /* Ensure full height */
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .container {
-        width: 95%;  /* Further increase width for better fit */
-        padding: 25px;
-        margin: 20px 10px;  /* Ensure it's vertically centered with slight horizontal margin */
-        height: 300px; /* Allow auto height for better content fit */
+        width: 90%;  /* Further increase width for better fit */
+        padding: 20px;
+        margin: auto;  /* Ensure it's centered */
+        height: auto;
     }
 
     h1 {
@@ -174,6 +182,6 @@ a:hover {
     }
 
     .loader {
-        margin-top: 40px; /* Reduce space between text and loader */
+        margin-top: 30px; /* Reduce space between text and loader */
     }
 }
