@@ -1,0 +1,151 @@
+/* General styles (already working well for larger screens) */
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Handjet:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1d1b1b;
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.282),  
+        rgba(0, 0, 0, 0.282)
+    ), url('Rectangle 6625 (2).png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(240, 75, 55, 0.3), 
+                0 6px 20px rgba(240, 75, 55, 0.2);
+    transition: box-shadow 0.1s ease-in-out;
+    width: 60%;
+    max-width: 700px;
+}
+
+.logo {
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #f04b37;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    font-family: "Dela Gothic One", sans-serif;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+span {
+    color: rgba(255, 255, 255, 0.799);
+}
+
+a {
+    color: #f04b37;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.loader {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    background-color: #f04b37;
+    border-radius: 50%;
+    margin: 0 5px;
+    animation: bounce 1s infinite;
+}
+
+.dot:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.dot:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Media query for screens up to 768px wide (tablets and larger mobile phones) */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;  /* Make the container take more horizontal space on smaller screens */
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 2rem;  /* Adjust heading size */
+    }
+
+    p {
+        font-size: 1rem;  /* Adjust paragraph font size */
+    }
+
+    .logo {
+        max-width: 150px;  /* Reduce logo size */
+    }
+
+    .loader {
+        margin-top: 10px;
+    }
+}
+
+/* Media query for screens up to 480px wide (small smartphones) */
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 1.5rem;  /* Smaller heading for small devices */
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 0.9rem;  /* Smaller paragraph font */
+    }
+
+    .logo {
+        max-width: 120px;  /* Reduce logo size further */
+    }
+
+    .dot {
+        width: 12px;  /* Smaller loader dots */
+        height: 12px;
+    }
+}
