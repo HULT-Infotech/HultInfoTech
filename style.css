@@ -152,7 +152,7 @@ a:hover {
         width: 95%;  /* Further increase width for better fit */
         padding: 25px;
         margin: 20px 10px;  /* Ensure it's vertically centered with slight horizontal margin */
-        height: auto; /* Allow auto height for better content fit */
+        height: 300px; /* Allow auto height for better content fit */
     }
 
     h1 {
