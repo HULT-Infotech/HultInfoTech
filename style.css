@@ -1,4 +1,4 @@
-/* General styles (already working well for larger screens) */
+
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Handjet:wght@100..900&display=swap');
 
 * {
@@ -9,7 +9,7 @@
 
 html, body {
     height: 100%;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-x: hidden; 
 }
 
 body {
@@ -41,11 +41,10 @@ body {
     transition: box-shadow 0.1s ease-in-out;
     max-width: 800px;
     width: 80%;
-    height: auto; /* Allow auto height for better content fit */
-    margin: auto;  /* Center the container on the screen */
+    height: auto; 
+    margin: auto;  
 }
 
-/* Add margin to ensure better centering */
 .card {
     margin: 0 auto;
     padding: 10px;
@@ -86,7 +85,7 @@ a:hover {
 .loader {
     display: flex;
     justify-content: center;
-    margin-top: 50px; /* Adjust margin to balance the layout */
+    margin-top: 50px; 
 }
 
 .dot {
@@ -118,16 +117,15 @@ a:hover {
     }
 }
 
-/* Media query for screens up to 768px wide (tablets and larger mobile phones) */
 @media (max-width: 768px) {
     html, body {
-        height: 100%; /* Ensure full height */
+        height: 100%; 
     }
 
     .container {
-        width: 90%;  /* Slight increase for smaller screens */
+        width: 90%;  
         padding: 40px;
-        margin: auto; /* Center the container */
+        margin: auto; 
         height: auto;
     }
 
@@ -144,10 +142,10 @@ a:hover {
     }
 }
 
-/* Media query for screens up to 480px wide (small smartphones) */
+
 @media (max-width: 480px) {
     html, body {
-        height: 100%; /* Ensure full height */
+        height: 100%;
     }
 
     body {
@@ -157,23 +155,23 @@ a:hover {
     }
 
     .container {
-        width: 90%;  /* Further increase width for better fit */
+        width: 90%;  
         padding: 20px;
-        margin: auto;  /* Ensure it's centered */
+        margin: auto;  
         height: auto;
     }
 
     h1 {
-        font-size: 1.7rem; /* Smaller header font for mobile */
+        font-size: 1.7rem; 
         margin-bottom: 10px;
     }
 
     p {
-        font-size: 0.9rem; /* Smaller paragraph font */
+        font-size: 0.9rem; 
     }
 
     .logo {
-        max-width: 120px; /* Reduce logo size */
+        max-width: 120px; 
     }
 
     .dot {
@@ -182,6 +180,6 @@ a:hover {
     }
 
     .loader {
-        margin-top: 30px; /* Reduce space between text and loader */
+        margin-top: 30px; 
     }
 }
