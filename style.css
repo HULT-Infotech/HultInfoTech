@@ -1,4 +1,4 @@
-/* General styles (already working well for larger screens) */
+/* General styles (no changes here) */
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Handjet:wght@100..900&display=swap');
 
 * {
@@ -41,7 +41,7 @@ body {
     transition: box-shadow 0.1s ease-in-out;
     max-width: 800px;
     width: 80%;
-    height:70vh;
+    height: 70vh;
 }
 
 .logo {
@@ -98,6 +98,7 @@ a:hover {
 .dot:nth-child(3) {
     animation-delay: 0.4s;
 }
+
 .dot:nth-child(4) {
     animation-delay: 0.6s;
 }
@@ -118,13 +119,13 @@ a:hover {
     }
 
     .container {
-        width: 90%;  /* Increase the container size for better visual balance */
+        width: 90%;  /* Keep container responsive */
         padding: 40px;
         margin: 20px 0;
     }
 
     h1 {
-        font-size: 2rem;
+        font-size: 2rem; /* Adjust font size for smaller screens */
     }
 
     p {
@@ -143,13 +144,13 @@ a:hover {
     }
 
     .container {
-        width: 95%;  /* Further increase size for small screens */
+        width: 95%;  /* Make the container fit within smaller screens */
         padding: 30px;
         margin: 20px 0;  /* Ensure it's vertically centered */
     }
 
     h1 {
-        font-size: 1.7rem;
+        font-size: 1.7rem; /* Slightly smaller font size */
         margin-bottom: 10px;
     }
 
